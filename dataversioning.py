@@ -1,19 +1,19 @@
 import pandas as pd
 
-
 class DataHistory:
-    
+
     def __init__(self, data):
-        pass
+        self.data = data
+        self.history = {}
 
     def add(self, commit):
-        pass
+        self.history[commit.name] = self.data.copy()
 
     def checkout(self, name):
-        pass
+        return(self.history[name])
 
     
-class DataCommit:
+class Commit:
 
     def __init__(self, name):
-        pass
+        self.name = name
