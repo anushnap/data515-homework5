@@ -12,6 +12,9 @@ class DataHistory:
     def checkout(self, name):
         return(self.history[name])
 
+    def log(self):
+        return(self.history.keys())
+
     
 class Commit:
 
